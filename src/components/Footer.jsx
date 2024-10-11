@@ -1,5 +1,5 @@
-import React from 'react'
-import { footerLinks } from '../constants'
+import React from 'react';
+import { footerLinks } from '../constants';
 
 const Footer = () => {
   return (
@@ -7,25 +7,27 @@ const Footer = () => {
       <div className="screen-max-width">
         <div>
           <p className="font-semibold text-gray text-xs">
-            More ways to shop: {' '}
+            Need help? {' '}
             <span className="underline text-blue">
-            Find an Apple Store {' '}
+              Find a Rehabilitation Center {' '}
             </span>
             or {' '}
-            <span className="underline text-blue">
-            other retailer
+            <span className="underline text-red">
+              other support services
             </span>{' '}
             near you.
           </p>
           <p className="font-semibold text-gray text-xs">
-            Or call 000800-040-1966
+            Or call 1-800-123-4567 for immediate assistance
           </p>
         </div>
 
         <div className="bg-neutral-700 my-5 h-[1px] w-full" />
 
         <div className="flex md:flex-row flex-col md:items-center justify-between">
-          <p className="font-semibold text-gray text-xs">Copright @ 2024 Apple Inc. All rights reserved.</p>
+          <p className="font-semibold text-gray text-xs">
+            Copyright @ 2024 Drogue. All rights reserved.
+          </p>
           <div className="flex">
             {footerLinks.map((link, i) => (
               <p key={link} className="font-semibold text-gray text-xs">
@@ -37,9 +39,15 @@ const Footer = () => {
             ))}
           </div>
         </div>
+
+        <div className="mt-5">
+          <p className="font-semibold text-gray text-xs">
+            Sources: <a href="https://bnn.go.id/"><span className="text-blue">[https://bnn.go.id/]</span></a>, <a href="https://www.detik.com/"><span className="text-blue">[https://www.detik.com/]</span></a>
+          </p>
+        </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

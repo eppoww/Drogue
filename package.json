@@ -1,5 +1,5 @@
 {
-  "name": "apple_website",
+  "name": "abdiel",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,15 +10,24 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@gsap/react": "^2.1.0",
     "@react-three/drei": "^9.101.0",
     "@react-three/fiber": "^8.15.19",
     "@sentry/react": "^7.106.0",
     "@sentry/vite-plugin": "^2.14.3",
+    "chart.js": "^4.4.3",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.28",
     "gsap": "^3.12.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "three": "^0.162.0"
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
+    "tailwind-merge": "^2.5.2",
+    "three": "^0.162.0",
+    "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",

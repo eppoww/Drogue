@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react"
 import gsap from "gsap";
 import ModelView from "./ModelView";
 import { useEffect, useRef, useState } from "react";
-import { yellowImg } from "../utils";
+import { yellowImg, cocaineImg } from "../utils";
 
 import * as THREE from 'three';
 import { Canvas } from "@react-three/fiber";
@@ -13,9 +13,9 @@ import { animateWithGsapTimeline } from "../utils/animations";
 const Model = () => {
   const [size, setSize] = useState('small');
   const [model, setModel] = useState({
-    title: 'iPhone 15 Pro in Natural Titanium',
+    title: 'yabes susu',
     color: ['#8F8A81', '#FFE7B9', '#6F6C64'],
-    img: yellowImg,
+    img: cocaineImg,
   })
 
   // camera control for the model view
@@ -56,7 +56,7 @@ const Model = () => {
     <section className="common-padding">
       <div className="screen-max-width">
         <h1 id="heading" className="section-heading">
-          Take a closer look.
+          Take A Closer Look.
         </h1>
 
         <div className="flex flex-col items-center mt-5">
@@ -107,13 +107,6 @@ const Model = () => {
                 ))}
               </ul>
 
-              <button className="size-btn-container">
-                {sizes.map(({ label, value }) => (
-                  <span key={label} className="size-btn" style={{ backgroundColor: size === value ? 'white' : 'transparent', color: size === value ? 'black' : 'white'}} onClick={() => setSize(value)}>
-                    {label}
-                  </span>
-                ))}
-              </button>
             </div>
           </div>
         </div>
